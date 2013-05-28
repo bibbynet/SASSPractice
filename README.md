@@ -1,4 +1,4 @@
 SASSPractice
 ============
 
-The files are in the "css" folder.
+The test files are in the "Css" folder.
