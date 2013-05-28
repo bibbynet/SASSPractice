@@ -1,0 +1,7 @@
+$container : 960px; 
+$main : 680px; 
+$gutter : 30px;  
+
+#sidebar {   
+	width: $container - $main - $gutter; 
+} 

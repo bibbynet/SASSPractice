@@ -1,0 +1,6 @@
+#content {
+  margin: 0 1.5em; }
+  @media screen and (min-width: 1280px) {
+    #content {
+      margin: 0 2.5em; } }
+

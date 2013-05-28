@@ -1,0 +1,8 @@
+a {   
+	color: blue;   
+	&:hover { 
+		color: red 
+	}   
+	display: inline-block;   
+	line-height: 1.8em; 
+} 

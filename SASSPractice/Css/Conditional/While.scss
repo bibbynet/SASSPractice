@@ -1,0 +1,6 @@
+$i: 0; @while $i <= 3 {   
+	.item-#{$i} {     
+		width: 100px * $i;   
+	}   
+	$i: $i + 1;  
+} 

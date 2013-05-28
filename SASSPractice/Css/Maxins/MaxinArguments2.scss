@@ -1,0 +1,9 @@
+@mixin link-colors($text:blue, $hover:red) {   
+	color: $text;   
+	&:hover { 
+		color: $hover; 
+	} 
+} 
+a {   
+	@include link-colors($hover: green); 
+} 

@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C14FB0E-420F-4EC8-887A-2D48BC6ACF02}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SASSPractice</RootNamespace>
+    <AssemblyName>SASSPractice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <IsCompassProject>True</IsCompassProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Css\Campass\Power.css">
+      <DependentUpon>Power.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Campass\Radius_Shadow.css">
+      <DependentUpon>Radius_Shadow.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Conditional\For.css">
+      <DependentUpon>For.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Conditional\IfElse.css">
+      <DependentUpon>IfElse.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Import\a.css">
+      <DependentUpon>a.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Import\a_b.css">
+      <DependentUpon>a_b.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Import\b.css">
+      <DependentUpon>b.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Inheritance\SelectorInheritance.css">
+      <DependentUpon>SelectorInheritance.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Maxins\MaxinArguments1.css">
+      <DependentUpon>MaxinArguments1.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Maxins\MaxinArguments2.css">
+      <DependentUpon>MaxinArguments2.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Maxins\MixinBase.css">
+      <DependentUpon>MixinBase.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Media\Media.css">
+      <DependentUpon>Media.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Nesting\Nesting.css">
+      <DependentUpon>Nesting.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Nesting\ParentSelector.css">
+      <DependentUpon>ParentSelector.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Variables\VariableBase.css">
+      <DependentUpon>VariableBase.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Variables\VariablesMath.css">
+      <DependentUpon>VariablesMath.scss</DependentUpon>
+    </Content>
+    <Content Include="Css\Conditional\While.css">
+      <DependentUpon>While.scss</DependentUpon>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="stylesheets\ie.css" />
+    <Content Include="stylesheets\print.css" />
+    <Content Include="stylesheets\screen.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Variables\VariableBase.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\ie.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>D:\Temp1\SASSPractice\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\print.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>D:\Temp1\SASSPractice\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\screen.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>D:\Temp1\SASSPractice\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Variables\VariablesMath.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Nesting\Nesting.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Nesting\ParentSelector.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Conditional\IfElse.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Conditional\For.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Conditional\While.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Import\a.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Import\b.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Import\a_b.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Media\Media.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Campass\Radius_Shadow.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Campass\Power.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Campass\compass\css3\_animation.scss" />
+    <Content Include="Css\Campass\compass\css3\_appearance.scss" />
+    <Content Include="Css\Campass\compass\css3\_background-clip.scss" />
+    <Content Include="Css\Campass\compass\css3\_background-origin.scss" />
+    <Content Include="Css\Campass\compass\css3\_background-size.scss" />
+    <Content Include="Css\Campass\compass\css3\_border-radius.scss" />
+    <Content Include="Css\Campass\compass\css3\_box-shadow.scss" />
+    <Content Include="Css\Campass\compass\css3\_box-sizing.scss" />
+    <Content Include="Css\Campass\compass\css3\_box.scss" />
+    <Content Include="Css\Campass\compass\css3\_columns.scss" />
+    <Content Include="Css\Campass\compass\css3\_filter.scss" />
+    <Content Include="Css\Campass\compass\css3\_flexbox.scss" />
+    <Content Include="Css\Campass\compass\css3\_font-face.scss" />
+    <Content Include="Css\Campass\compass\css3\_hyphenation.scss" />
+    <Content Include="Css\Campass\compass\css3\_images.scss" />
+    <Content Include="Css\Campass\compass\css3\_inline-block.scss" />
+    <Content Include="Css\Campass\compass\css3\_opacity.scss" />
+    <Content Include="Css\Campass\compass\css3\_pie.scss" />
+    <Content Include="Css\Campass\compass\css3\_regions.scss" />
+    <Content Include="Css\Campass\compass\css3\_selection.scss" />
+    <Content Include="Css\Campass\compass\css3\_shared.scss" />
+    <Content Include="Css\Campass\compass\css3\_text-shadow.scss" />
+    <Content Include="Css\Campass\compass\css3\_transform.scss" />
+    <Content Include="Css\Campass\compass\css3\_transition.scss" />
+    <Content Include="Css\Campass\compass\css3\_user-interface.scss" />
+    <Content Include="Css\Campass\compass\layout\_grid-background.scss" />
+    <Content Include="Css\Campass\compass\layout\_sticky-footer.scss" />
+    <Content Include="Css\Campass\compass\layout\_stretching.scss" />
+    <Content Include="Css\Campass\compass\reset\_utilities-legacy.scss" />
+    <Content Include="Css\Campass\compass\reset\_utilities.scss" />
+    <Content Include="Css\Campass\compass\typography\links\_hover-link.scss" />
+    <Content Include="Css\Campass\compass\typography\links\_link-colors.scss" />
+    <Content Include="Css\Campass\compass\typography\links\_unstyled-link.scss" />
+    <Content Include="Css\Campass\compass\typography\lists\_bullets.scss" />
+    <Content Include="Css\Campass\compass\typography\lists\_horizontal-list.scss" />
+    <Content Include="Css\Campass\compass\typography\lists\_inline-block-list.scss" />
+    <Content Include="Css\Campass\compass\typography\lists\_inline-list.scss" />
+    <Content Include="Css\Campass\compass\typography\text\_ellipsis.scss" />
+    <Content Include="Css\Campass\compass\typography\text\_force-wrap.scss" />
+    <Content Include="Css\Campass\compass\typography\text\_nowrap.scss" />
+    <Content Include="Css\Campass\compass\typography\text\_replacement.scss" />
+    <Content Include="Css\Campass\compass\typography\_links.scss" />
+    <Content Include="Css\Campass\compass\typography\_lists.scss" />
+    <Content Include="Css\Campass\compass\typography\_text.scss" />
+    <Content Include="Css\Campass\compass\typography\_units.scss" />
+    <Content Include="Css\Campass\compass\typography\_vertical_rhythm.scss" />
+    <Content Include="Css\Campass\compass\utilities\color\_brightness.scss" />
+    <Content Include="Css\Campass\compass\utilities\color\_contrast.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_clearfix.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_float.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_hacks.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_min.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_reset.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_tabs.scss" />
+    <Content Include="Css\Campass\compass\utilities\general\_tag-cloud.scss" />
+    <Content Include="Css\Campass\compass\utilities\links\_hover-link.scss" />
+    <Content Include="Css\Campass\compass\utilities\links\_link-colors.scss" />
+    <Content Include="Css\Campass\compass\utilities\links\_unstyled-link.scss" />
+    <Content Include="Css\Campass\compass\utilities\lists\_bullets.scss" />
+    <Content Include="Css\Campass\compass\utilities\lists\_horizontal-list.scss" />
+    <Content Include="Css\Campass\compass\utilities\lists\_inline-block-list.scss" />
+    <Content Include="Css\Campass\compass\utilities\lists\_inline-list.scss" />
+    <Content Include="Css\Campass\compass\utilities\sprites\_base.scss" />
+    <Content Include="Css\Campass\compass\utilities\sprites\_sprite-img.scss" />
+    <Content Include="Css\Campass\compass\utilities\tables\_alternating-rows-and-columns.scss" />
+    <Content Include="Css\Campass\compass\utilities\tables\_borders.scss" />
+    <Content Include="Css\Campass\compass\utilities\tables\_scaffolding.scss" />
+    <Content Include="Css\Campass\compass\utilities\text\_ellipsis.scss" />
+    <Content Include="Css\Campass\compass\utilities\text\_nowrap.scss" />
+    <Content Include="Css\Campass\compass\utilities\text\_replacement.scss" />
+    <Content Include="Css\Campass\compass\utilities\_color.scss" />
+    <Content Include="Css\Campass\compass\utilities\_general.scss" />
+    <Content Include="Css\Campass\compass\utilities\_links.scss" />
+    <Content Include="Css\Campass\compass\utilities\_lists.scss" />
+    <Content Include="Css\Campass\compass\utilities\_print.scss" />
+    <Content Include="Css\Campass\compass\utilities\_sprites.scss" />
+    <Content Include="Css\Campass\compass\utilities\_tables.scss" />
+    <Content Include="Css\Campass\compass\utilities\_text.scss" />
+    <Content Include="Css\Campass\compass\_css3.scss" />
+    <Content Include="Css\Campass\compass\_layout.scss" />
+    <Content Include="Css\Campass\compass\_reset-legacy.scss" />
+    <Content Include="Css\Campass\compass\_reset.scss" />
+    <Content Include="Css\Campass\compass\_support.scss" />
+    <Content Include="Css\Campass\compass\_typography.scss" />
+    <Content Include="Css\Campass\compass\_utilities.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Maxins\MixinBase.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Maxins\MaxinArguments1.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Maxins\MaxinArguments2.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Inheritance\SelectorInheritance.scss" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

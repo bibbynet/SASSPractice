@@ -1,0 +1,8 @@
+.box {
+  -webkit-border-radius: first-value-of(5px);
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: compact() gray 1px 1px 20px;
+  -moz-box-shadow: compact() gray 1px 1px 20px;
+  box-shadow: compact() gray 1px 1px 20px; }
+

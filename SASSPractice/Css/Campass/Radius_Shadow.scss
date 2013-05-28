@@ -1,0 +1,6 @@
+@import "compass/css3";  
+
+.box{   
+	@include border-radius(5px);   
+	@include box-shadow(#808080, 1px, 1px, 20px); 
+} 

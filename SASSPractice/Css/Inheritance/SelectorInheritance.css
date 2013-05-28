@@ -1,0 +1,7 @@
+.error, .required-error {
+  font-size: 15px;
+  color: red; }
+
+.required-error {
+  font-weight: 900; }
+

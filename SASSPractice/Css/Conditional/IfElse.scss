@@ -1,0 +1,13 @@
+$theme: ocean; 
+
+div {   
+	@if $theme == dusty {   
+		background: #c6bba9;   
+		color: $color;   
+	} 
+	@else if 
+	$theme == ocean {     
+		background: blue;     
+		color: white;   
+	} 
+}

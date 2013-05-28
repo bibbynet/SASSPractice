@@ -1,0 +1,8 @@
+.my_class {
+  -webkit-box-shadow: compact() rgba(0, 0, 0, 0.6) 0px 0px 10px;
+  -moz-box-shadow: compact() rgba(0, 0, 0, 0.6) 0px 0px 10px;
+  box-shadow: compact() rgba(0, 0, 0, 0.6) 0px 0px 10px;
+  -webkit-border-radius: first-value-of(8px) first-value-of(8px);
+  -moz-border-radius: 8px / 8px;
+  border-radius: 8px / 8px; }
+
