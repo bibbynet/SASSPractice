@@ -1,4 +1,4 @@
 SASSPractice
 ============
 
-SASS Practice
+The files are in the "css" folder.
