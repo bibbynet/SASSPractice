@@ -1,0 +1,8 @@
+@import "compass/css3";
+.rounded {
+	@include border-radius(5px);
+	
+}
+.rounded1{
+	@include border-corner-radius(top, left, 5px);
+}

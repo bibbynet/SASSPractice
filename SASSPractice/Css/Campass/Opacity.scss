@@ -1,0 +1,10 @@
+@import "compass/css3";
+#opacity05 {
+	@include opacity(0.5);
+}
+#opacity1 {
+	@include opacity(0);
+}
+#opacity0 {
+	@include opacity(1);
+}

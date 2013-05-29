@@ -1,0 +1,10 @@
+.rounded {
+  -webkit-border-radius: first-value-of(5px);
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.rounded1 {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px; }
+
